@@ -1,0 +1,26 @@
+h1,
+h2, 
+h4,
+h5,
+h6{
+    font-family: 'Lato', sans-serif;
+}
+
+.primary-heading{
+    font-size: 3.5rem;
+    letter-spacing: 1.3;
+    font-weight: 700;
+}
+
+.sec-heading{
+    font-size: 3rem;
+    letter-spacing: 1.2;
+    font-weight: 400;
+}
+
+.ter-heading{
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #000;
+}

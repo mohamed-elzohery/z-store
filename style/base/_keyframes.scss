@@ -1,0 +1,38 @@
+
+  /************************************KEY FRAMES************************************/
+  @keyframes rightIn {
+    from{
+      transform: translateX(-100%);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes rightOut {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes leftIn {
+    from{
+      transform: translateX(100%);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes leftOut {
+    from{
+      transform: translateX(0);
+    }
+  
+    to{
+      transform: translateX(-100%);
+    }
+  }

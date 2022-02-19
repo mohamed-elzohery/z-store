@@ -1,0 +1,9 @@
+.contact{
+    background: url('/imgs/contact.jpg'), linear-gradient(to right, var(--sec-color-dark) 0%, var(--sec-color-light) 100%);;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+

@@ -1,0 +1,21 @@
+@import 'style/abstract/mixins';
+
+@import "style/base/base";
+@import "style/base/reset";
+@import "style/base/keyframes";
+@import "style/base/typography";
+@import "style/base/utilities";
+
+@import "style/components/card";
+@import "style/components/form";
+@import "style/components/logo";
+@import "style/components/slider";
+
+@import "style/layout/header";
+@import "style/layout/footer";
+@import "style/layout/navigation";
+
+@import "style/pages/about";
+@import "style/pages/contact";
+@import "style/pages/home";
+

@@ -1,0 +1,70 @@
+.container{
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+
+svg{
+    pointer-events: none;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.disabled{
+    opacity: .2;
+    pointer-events: none;
+}
+
+.icon-small{
+    width: 2rem!important;
+    width: 2rem!important;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+//Paddings
+.pt-md{
+    padding-top: 2rem;
+}
+
+.pb-md{
+    padding-bottom: 2rem;
+}
+
+.pt-sm{
+    padding-top: 1rem;
+}
+
+.pb-sm{
+    padding-bottom: 1rem;
+}
+
+.pt-lg{
+    padding-top: 4rem;
+}
+
+.pb-lg{
+    padding-bottom: 4rem;
+}
+//Margins
+.mb-xlg
+{
+    margin-bottom: 8rem;
+}
+
+.mt-xlg
+{
+    margin-top: 8rem;
+}
+//position utilities
+.fixed{
+    position: fixed;
+    top:0;
+    z-index: 2000;
+}
+
+

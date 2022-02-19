@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="online store to sell phones, laptops, cars...etc">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!--Alternate icon for svg uncompatible browsers-->
+    <link rel="alternate icon" type="image/png" href="/alter-favicon.png">
+
+    <!-- Fonts -->
+    <!-- Basic Font -->
+    <!-- <link rel="stylesheet" href="/font-montserrat.css"> -->
+    <!-- Headings Font -->
+    <!-- <link rel="stylesheet" href="/font-Lato.css"> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <title>Home</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav fixed">
+            <div class="navbar container">
+                <a class="logobox" href="/home.html">
+                    <img class="logobox__logo" src="/imgs/SVG/logo.svg" alt="Z-store logo">
+                    <h1 class="primary-heading">
+                        store
+                    </h1>
+                </a>
+                <form action="/" class="srch" method="get">
+                    <input type="text" class="srch__field" placeholder="search for products..">
+                    <button class="srch__btn" type="submit">
+                        <svg class="srch__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <a class="navlink" href="/contact.html">
+                    contact us
+                </a>
+                <a class="navlink" href="/about.html">
+                    about
+                </a>
+                <a class="navlink" href="#">
+                    <svg class="navlink__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="navlink__counter navlink__counter--fav">
+                        0
+                    </span>
+                </a>
+                <a class="navlink" href="#">
+                    <svg class="navlink__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span class="navlink__counter navlink__counter--cart">
+                        0
+                    </span>
+                </a>
+            </div>
+
+        </nav>
+
+        <!-- Start Slider Mark up -->
+        <div class="slider mt-xlg">
+            <div class="slider__slide-container">
+                <div class="slider__img-container">
+                    <img src="imgs/music.jpg" alt="grammaphone-photo" class="slider__img">
+                    <div class="slider__paragraph">
+                        <h2 class="slider__header sec-heading">
+                            we have music instruments
+                        </h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores voluptate tenetur!<br>
+                        <a href="#" class="slider__link">see more &rarr;</a>
+                    </div>
+                </div>
+                <div class="slider__img-container">
+                    <img src="imgs/mobile.jpg" alt="phone-photo" class="slider__img">
+                    <div class="slider__paragraph">
+                        <h2 class="slider__header sec-heading">
+                            shopping latest phones
+                        </h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores voluptate tenetur!<br>
+                        <a href="#" class="slider__link">see more &rarr;</a>
+                    </div>
+                </div>
+                <div class="slider__img-container">
+                    <img src="imgs/car.jpg" alt="car-photo" class="slider__img">
+                    <div class="slider__paragraph">
+                        <h2 class="slider__header sec-heading">
+                            looking for a new car?
+                        </h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores voluptate tenetur!<br>
+                        <a href="#" class="slider__link">see more &rarr;</a>
+                    </div>
+                </div>
+                <div class="slider__img-container">
+                    <img src="imgs/workshop.jpg" alt="workshop-photo" class="slider__img">
+                    <div class="slider__paragraph">
+                        <h2 class="slider__header sec-heading">
+                            all tools are here
+                        </h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores voluptate tenetur!<br>
+                        <a href="#" class="slider__link">see more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls__container">
+                <button class="controls__btn controls__btn--left">
+                    <svg class="controller__icon">
+                        <use xlink:href="imgs/SVG/sprite.svg#icon-chevron-small-left"></use>
+                    </svg>
+                </button>
+                <button class="controls__btn controls__btn--right">
+                    <svg class="controller__icon">
+                        <use xlink:href="imgs/SVG/sprite.svg#icon-chevron-small-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="container">
+            <h2 class="sec-heading info__heading">
+                we sell everything
+            </h2>
+            <p class="info__txt">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis laudantium quo libero assumenda dolore quisquam voluptatem sed, amet iste id, dignissimos iure similique molestiae cupiditate possimus alias voluptatibus accusantium voluptas.
+            </p>
+            <a class="info__btn" href="#shop">
+                see our products
+            </a>
+        </div>
+    </section>
+    <!-- START SHOP SECTION -->
+    <section class="shop" id="shop">
+        <h2 class="sec-heading shop__heading">our products</h2>
+        <div class="category">
+            <button class="category__btn--left disabled">
+                <svg class="category__icon icon-small">
+                    <use href="sprite.svg#icon-chevron-thin-left"></use>
+                </svg>
+            </button>
+            <div class="category__slider">
+                <button class="category__btn category__btn--selected" category="all">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-shop"></use>
+                    </svg>
+                        <p class="category__txt">all</p>
+                </button>
+                <button class="category__btn" category="phones">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-mobile"></use>
+                    </svg>
+                        <p class="category__txt">phones</p>
+                </button>
+                <button class="category__btn" category="cameras">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-camera"></use>
+                    </svg>
+                        <p class="category__txt">cameras</p>
+                </button>
+                <button class="category__btn" category="games">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-game-controller"></use>
+                    </svg>
+                        <p class="category__txt">games</p>
+                </button>
+                <button class="category__btn" category="tools">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-tools"></use>
+                    </svg>
+                        <p class="category__txt">tools</p>
+                </button>
+                <button class="category__btn" category="cars">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-truck"></use>
+                    </svg>
+                        <p class="category__txt">cars</p>
+                </button>
+                <button class="category__btn" category="books">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-book"></use>
+                    </svg>
+                        <p class="category__txt">books</p>
+                </button>
+                <button class="category__btn" category="furniture">
+                    <svg class="category__icon">
+                        <use href="/imgs/SVG/sprite.svg#icon-library"></use>
+                    </svg>
+                        <p class="category__txt">furniture</p>
+                </button>
+            </div>
+            <button class=" category__btn--right">
+                <svg class="category__icon icon-small">
+                    <use href="sprite.svg#icon-chevron-thin-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="products">
+            <div class="card" category="cars">
+                <a href="#">
+                <img src="/imgs/car-small.jpg" alt="car photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        ferrari car model 2020 full options 6 clinders
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;199
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="music">
+                <a href="#">
+                <img src="/imgs/guitar.jpg" alt="guitar photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        classic guitar with a new skin
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;34
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="phones">
+                <a href="#">
+                <img src="/imgs/mobile-small.jpg" alt="phone photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        samsung s44 pro with broken screen
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;12
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="cars">
+                <a href="#">
+                <img src="/imgs/car-classic.jpg" alt="car photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        vintage car model 1912 good state
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;344
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="music">
+                <a href="#">
+                <img src="/imgs/violin.jpg" alt="violin photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        3/4 violin model 2002 made in china
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;199
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="tools>
+                <a href="#">
+                <img src="/imgs/hammers.jpg" alt="tools photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        hammers pack of different sizes
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;23
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="furniture">
+                <a href="#">
+                <img src="/imgs/couch.jpg" alt="couch photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        modern couch different colors
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;89
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="books">
+                <a href="#">
+                <img src="/imgs/books.jpg" alt="car photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        hand written historical books 500 years old
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;439
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="furniture">
+                <a href="#">
+                <img src="/imgs/chair.jpg" alt="chair photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        chair of comfort for sale
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;309
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="games">
+                <a href="#">
+                <img src="/imgs/games.png" alt="vr photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        new vR glasses for games and movies
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;19
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="games">
+                <a href="#">
+                <img src="/imgs/games-ball.jpg" alt="ball photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        noike original ball white/yellow
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;23
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" category="cameras">
+                <a href="#">
+                <img src="/imgs/camera (1).jpg" alt="camera photo" class="card__img">
+                <div class="card__content">
+                    <h3 class="ter-heading pt-md pb-sm">
+                        canos camera with deep lense resolution
+                    </h3>
+                </a>
+                    <div class="card__rating">
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star"></use></svg>
+                        <svg class="rating-star"><use href="/imgs/SVG/sprite.svg#icon-star-outlined"></use></svg>
+                    </div>
+                    <p class="card__desc pt-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi tenetur dignissimos qui animi.
+                    </p>
+                    <span class="card__price pt-lg pb-sm">
+                        price
+                        <span class="card__us">
+                            $&MediumSpace;199
+                        </span>
+                    </span>
+                    <div class="card__checkin">
+                        <button  class="card__btn-cart" role="add">
+                        <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                            add to cart
+                        </button>
+                        <button  class="card__btn-cart hidden" role="remove">
+                            <svg class="checkin__icon"><use href="/imgs/SVG/sprite.svg#icon-shopping-cart"></use></svg>
+                                remove from cart
+                        </button>
+                        <button  class="card__love" status="unloved">
+                        <svg class="love__icon"><use href="/imgs/SVG/sprite.svg#icon-heart-outlined"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section> 
+
+<!-- FOOTER STARTS HERE -->
+    <footer class="footer">
+        <div class="container">
+            <h1 class="primary-heading center">
+            <a class="logobox"  href="/home.html">
+                <img class="logobox__logo" src="/imgs/SVG/logo.svg" alt="Z-store logo">
+                    store
+                </h1>
+            </a>
+            <div class="footer__links">
+                <div class="footer__block">
+                    <ul class="footer__lst--v">
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; contact us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; about</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; main projects</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; taxes policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; latest news</a></li>
+                    </ul>
+                    <ul class="footer__lst--v">
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; products</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; customer care</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; agents</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; remote services</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <ul class="footer__lst--v">
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; policies</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; careers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; social duty</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; guide</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; rights of use</a></li>
+                    </ul>
+                    <ul class="footer__lst--v">
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; events</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; terms of use</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; services</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">&rarr; manual</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <ul class="footer__lst-h">
+                    <li><a class="footer__link" href="#" title="twitter">
+                        <svg class="footer__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="footer__link" href="#" title="instagram">
+                        <svg class="footer__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="footer__link" href="#" title="gitub">
+                        <svg class="footer__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="footer__link" href="#" title="whatsapp">
+                        <svg class="footer__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="footer__link" href="#" title="facebook">
+                        <svg class="footer__icon">
+                            <use href="/imgs/SVG/sprite.svg#icon-facebook-with-circle"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+                <p class="copy__txt">
+                    All rights are reserved to elzohery&copy; 2021
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Button to scroll up -->
+    <button class="navbtn">
+        <svg class="navbtn__icon">
+            <use href="/imgs/SVG/sprite.svg#icon-chevron-small-up"></use>
+        </svg>
+    </button>
+    <script src="/script/ctgr.js"></script>
+    <script src="/script/main.js"></script>
+    <script src="/script/slider.js"></script>
+
+</body>
+</html>

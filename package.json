@@ -1,0 +1,24 @@
+{
+  "name": "z-store",
+  "version": "1.0.0",
+  "description": "final project of js course for ITI ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "node-sass style/main.scss main.css -w",
+    "sass:compile": "node-sass style/main.scss main.css",
+    "css:concat": "concat -o style/style.concat.css main.css font-Lato.css font-montserrat.css",
+    "css:prefix": "postcss --use autoprefixer -b 'last 10 versions' style/style.concat.css -o style/style.prefix.css",
+    "css:compress": "node-sass style/style.prefix.css style/style.css --output-style compressed",
+    "css:build": "npm-run-all sass:compile css:concat css:prefix css:compress"
+  },
+  "author": "Mohamed Elzohery",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.1.0"
+  }
+}
